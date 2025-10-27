@@ -1,17 +1,17 @@
-# 🧴 Mini Proyecto de Integración — API RESTful de Productos de Aseo
+# Mini Proyecto de Integración o API RESTful de Productos de Aseo Natan Hernandez
 
 ---
 
-## 📋 Descripción del Proyecto
+## Descripción del Proyecto
 
-Este proyecto consiste en el desarrollo de una **API RESTful** con **Node.js** y **Express** para gestionar un inventario de **productos de aseo**.  
-El objetivo es aplicar los principios de **ingeniería de software**, **metodologías de desarrollo web**, **pruebas automatizadas**, y **buenas prácticas de integración continua**.
+Este proyecto consiste en el desarrollo de una **API RESTful** con **Node.js** y **Express** para gestionar un inventario de **productos de aseo**, el cual tiene como objetivo el uso de bases y estructuras de back end 
+y la aplicacion de principios de programacion y metodos de desarrollo web, implementando algunas cosas como  pruebas automatizadas, y buenas prácticas de integración continua.
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
-La API permite realizar operaciones **CRUD** (Crear, Leer, Actualizar y Eliminar) sobre los productos.
+La API permite realizar operaciones como (get,put,post y delete) sobre los productos.
 
 | Método | Endpoint | Descripción |
 |--------|-----------|-------------|
@@ -22,49 +22,13 @@ La API permite realizar operaciones **CRUD** (Crear, Leer, Actualizar y Eliminar
 | **DELETE** | `/api/productos/:id` | Elimina un producto del sistema |
 
 Ejemplo de producto:
-```json
-{
-  "id": 1,
-  "nombre": "Jabón",
-  "precio": 3700,
-  "stock": 10
-}
-```
+IMAGEN
 
----
+## Arquitectura y Organización del Proyecto
 
-## 🧩 Arquitectura y Organización del Proyecto
-
-La API sigue una **arquitectura MVC (Modelo-Vista-Controlador)**, donde se separan responsabilidades para facilitar el mantenimiento del código.
-
+Esta API RESTful sigue una arquitectura MVC (Modelo-Vista-Controlador) tal como lo pedia la docente en distintos encuentros sincronicos, donde se separan responsabilidades para facilitar el mantenimiento del código.
 ### 📁 Estructura del proyecto:
-```
-mini-proyecto-de-integracion/
-│
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-│
-├── controllers/
-│   └── productosController.js
-│
-├── middlewares/
-│   ├── autenBasica.js
-│   └── validarProducto.js
-│
-├── models/
-│   └── productosModel.js
-│
-├── routes/
-│   └── productosRoutes.js
-│
-├── test/
-│   └── productos.test.js
-│
-├── app.js
-├── package.json
-└── README.md
-```
+IMAGEN
 
 ---
 
