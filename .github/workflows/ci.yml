@@ -1,0 +1,34 @@
+name: CI - Integración continua del proyecto
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Ejecutar pruebas con Jest
+        run: npm test
+
+      - name: (Opcional) Verificar ejecución del servidor
+        if: success()                
+        run: |
+          node app.js &
+          sleep 3
+          # opcional: comprobar la ruta raíz
+          curl -I http://localhost:3000 || echo "curl falló pero pruebas OK"
