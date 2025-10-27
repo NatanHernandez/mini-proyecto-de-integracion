@@ -27,12 +27,12 @@ IMAGEN
 ## Arquitectura y Organización del Proyecto
 
 Esta API RESTful sigue una arquitectura MVC (Modelo-Vista-Controlador) tal como lo pedia la docente en distintos encuentros sincronicos, donde se separan responsabilidades para facilitar el mantenimiento del código.
-### 📁 Estructura del proyecto:
+###  Estructura del proyecto:
 IMAGEN
 
----
+--
 
-## ⚙️ Instalación y Ejecución
+##  Instalación y Ejecución
 
 ### 🔧 Requisitos previos:
 - Tener instalado **Node.js (v18 o superior)**
