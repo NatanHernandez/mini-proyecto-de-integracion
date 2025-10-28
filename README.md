@@ -28,6 +28,7 @@ Ejemplo de producto:
 Esta API RESTful sigue una arquitectura MVC (Modelo-Vista-Controlador) tal como lo pedia la docente en distintos encuentros sincronicos, donde se separan responsabilidades para facilitar el mantenimiento del código.
 ###  Estructura del proyecto:
 ![GET productos](./assets/estructura.png)
+
 En este proyecto creamos varias carpetas para organizar los archivos, las pruebas y tambien la documentacion para su correcto funcionamiento.
 
 --
@@ -74,17 +75,26 @@ Lo que usamos para nuesta API RESTful fue proteger por autenticación **Basic Au
 **Autenticacion correcta**
 
 ![GET productos](./assets/middleware.png)
-esta es la autenticacion que pedira el programa cuando se entre al endpoint para poder ver la lista de productos de aseo
+
+-esta es la autenticacion que pedira el programa cuando se entre al endpoint para poder ver la lista de productos de aseo
+
 ![GET productos](./assets/middleware-bien.png)
-aqui introducimos los datos correctamente para ver que pasaba y ver si el funcionamiento esta bien
+
+-aqui introducimos los datos correctamente para ver que pasaba y ver si el funcionamiento esta bien
+
 ![GET productos](./assets/endpoint.png)
-si es correcto seberia aparecer nuestro endpoint, el cual mostramos anteriormente
+
+-si es correcto seberia aparecer nuestro endpoint, el cual mostramos anteriormente
 
 **Autenticacion incorrecta**
+
 ![GET productos](./assets/credencial-mal.png)
-en este caso pusimos datos incorrectos para saber que pasaba si le damos enter a esto
+
+-en este caso pusimos datos incorrectos para saber que pasaba si le damos enter a esto
+
 ![GET productos](./assets/credencial-mal2.png)
-aqui vemos el mensaje que nos deja el programa al introducir los datos mal, por ello no mostrara la lista de productos propuesta
+
+-aqui vemos el mensaje que nos deja el programa al introducir los datos mal, por ello no mostrara la lista de productos propuesta
 
 ## Pruebas con Postman
 
