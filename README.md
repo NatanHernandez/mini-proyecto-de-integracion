@@ -4,19 +4,18 @@
 
 ## Descripción del Proyecto
 
-Este proyecto consiste en el desarrollo de una **API RESTful** con **Node.js** y **Express** para gestionar un inventario de **productos de aseo**, el cual tiene como objetivo el uso de bases y estructuras de back end 
+Este proyecto consiste en el desarrollo de una **API RESTful** con **Node.js** y **Express** para gestionar un inventario de productos de aseo, el cual tiene como objetivo el uso de bases y estructuras de back end 
 y la aplicacion de principios de programacion y metodos de desarrollo web, implementando algunas cosas como  pruebas automatizadas, y buenas prácticas de integración continua.
 
 ---
 
-## Funcionalidades
+## Funcionalidad
 
-La API permite realizar operaciones como (get,put,post y delete) sobre los productos.
+La API permite realizar operaciones como (get,put,post y delete) sobre los productos,las pruebas de estas se hicieron en postman y se anexaran mas adelante con algunas imagenes para una mayor comprension de este.
 
 | Método | Endpoint | Descripción |
 |--------|-----------|-------------|
 | **GET** | `/api/productos` | Obtiene la lista completa de productos |
-| **GET** | `/api/productos/:id` | Obtiene un producto específico |
 | **POST** | `/api/productos` | Crea un nuevo producto |
 | **PUT** | `/api/productos/:id` | Actualiza un producto existente |
 | **DELETE** | `/api/productos/:id` | Elimina un producto del sistema |
@@ -34,91 +33,69 @@ IMAGEN
 
 ##  Instalación y Ejecución
 
-### 🔧 Requisitos previos:
-- Tener instalado **Node.js (v18 o superior)**
-- Tener **Git** configurado
-- Tener **Visual Studio Code**
-- Tener **Postman** para pruebas de endpoints
+- instalamos nodejs para el correcto uso de la API RESTful
+- Tener Git configurado
+- Tener Visual Studio Code
+- instalar Postman para pruebas de endpoints
 
-### 🧱 Instalación:
-1️⃣ Clonar el repositorio:
-```bash
-git clone https://github.com/NatanHernandez/mini-proyecto-de-integracion.git
-```
-
-2️⃣ Acceder a la carpeta:
+### pasos a seguir
+ - Acceder a la carpeta:
 ```bash
 cd mini-proyecto-de-integracion
 ```
 
-3️⃣ Instalar dependencias:
+ - Instalar dependencias:
 ```bash
 npm install
 ```
 
-4️⃣ Ejecutar el proyecto:
+ - Ejecutar el proyecto:
 ```bash
 npm run dev
 ```
 
-5️⃣ O iniciar manualmente:
+- iniciar manualmente:
 ```bash
 npm start
 ```
 
 Servidor disponible en:  
-👉 [http://localhost:3000](http://localhost:3000)
+[http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🔐 Autenticación Básica
+## Autenticación Básica
 
-Toda la API está protegida por autenticación **Basic Auth**.  
-Debes enviar tus credenciales en cada solicitud.
+Lo que usamos para nuesta API RESTful fue proteger por autenticación **Basic Auth** para que la persona que quiera ver el contenido tenga que introducir una contraseña en especifico, a continuacion se mostraran las dos imagenes que se deberian ver al abrir nuestro endpoint.  
+IMAGEN CORRECTA
+IMAGEN INCORRECTA
 
-| Campo | Valor |
-|-------|--------|
-| **Usuario** | `natan` |
-| **Contraseña** | `1202` |
-
-### Ejemplo de encabezado:
-```
-Authorization: Basic bmF0YW46MTIwMg==
-```
-
-Si las credenciales son incorrectas, el servidor responderá con:
-```
-403 Credenciales incorrectas
-```
-
----
-
-## 🧪 Pruebas con Postman
+## Pruebas con Postman
 
 Se realizaron pruebas en **Postman** para verificar los endpoints:
-
-✅ `GET /api/productos` — listar productos  
-✅ `POST /api/productos` — crear un producto  
-✅ `PUT /api/productos/:id` — actualizar un producto  
-✅ `DELETE /api/productos/:id` — eliminar un producto  
+ 
+IMAGEN GET
+IMAGEN POST
+IMAGEN PUT
+IMAGEN DELETE
 
 Todas las rutas fueron probadas con autenticación básica y devuelven los códigos esperados (`200`, `201`, `404`).
 
 ---
 
-## 🧠 Middleware Personalizados
+##  Middleware Personalizados
 
-### 🔸 `autenBasica.js`
-Verifica credenciales del usuario para acceder a los endpoints.
+###  `autenBasica.js`
+Verificamos las credenciales del usuario para acceder a los endpoints.
 
-### 🔸 `validarProducto.js`
-Valida que los datos del producto sean correctos antes de crear o actualizar:
+###  `validarProducto.js`
+Valida que los datos del producto sean correctos antes de crear o actualizar alguna otra informacion:
 - Nombre no vacío
 - Precio numérico y mayor que 0
 
 ---
 
-## 📦 Modelo de Datos
+## Modelo de Datos
 
 Definido en `productosModel.js`, simula una base de datos en memoria:
 
