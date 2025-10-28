@@ -161,7 +161,7 @@ let productos = [
 
 ---
 
-## 🧰 Integración Continua (CI)
+## Integración Continua (CI)
 
 El proyecto usa **GitHub Actions** para ejecutar pruebas automáticamente con Jest cada vez que se hace un push o pull request en la rama main.
 
