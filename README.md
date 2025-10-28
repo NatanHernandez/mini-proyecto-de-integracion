@@ -21,7 +21,7 @@ La API permite realizar operaciones como (get,put,post y delete) sobre los produ
 | **DELETE** | `/api/productos/:id` | Elimina un producto del sistema |
 
 Ejemplo de producto:
-IMAGEN
+![GET productos](./assets/endpoint.png)
 
 ## Arquitectura y Organización del Proyecto
 
