@@ -14,10 +14,10 @@ y la aplicacion de principios de programacion y metodos de desarrollo web, imple
 La API permite realizar operaciones como (get,put,post y delete) sobre los productos,las pruebas de estas se hicieron en postman y se anexaran mas adelante con algunas imagenes para una mayor comprension de este.
 
  Método | Endpoint | Descripción 
- **GET** | `/api/productos` | Obtiene la lista completa de productos 
- **POST** | `/api/productos` | Crea un nuevo producto 
- **PUT** | `/api/productos/:id` | Actualiza un producto existente 
- **DELETE** | `/api/productos/:id` | Elimina un producto del sistema 
+ - **GET** | `/api/productos` | Obtiene la lista completa de productos 
+ - **POST** | `/api/productos` | Crea un nuevo producto 
+ - **PUT** | `/api/productos/:id` | Actualiza un producto existente 
+ - **DELETE** | `/api/productos/:id` | Elimina un producto del sistema 
 
 
 Ejemplo de producto:
