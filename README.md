@@ -191,19 +191,9 @@ Archivo: test/productos.test.js
 
 ---
 
-## 🧭 Flujo del Proyecto (Diagrama)
+##  Flujo del Proyecto (Diagrama)
 
 - como ultimo punto adjunto la imagen de un diagrama de flujo del proceso de construccion de esta API RESTful
   
-```mermaid
-flowchart TD
-A[Cliente/Postman] -->|Solicitud con Basic Auth| B[Servidor Express]
-B --> C[Middleware autenBasica]
-C --> D[ValidarProducto.js]
-D --> E[Controlador ProductosController]
-E --> F[Modelo ProductosModel]
-F --> G[Respuesta JSON]
-```
 
----
 
