@@ -27,7 +27,7 @@ Ejemplo de producto:
 
 Esta API RESTful sigue una arquitectura MVC (Modelo-Vista-Controlador) tal como lo pedia la docente en distintos encuentros sincronicos, donde se separan responsabilidades para facilitar el mantenimiento del código.
 ###  Estructura del proyecto:
-IMAGEN
+![GET productos](./assets/estructura.png)
 
 --
 
