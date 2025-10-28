@@ -28,6 +28,7 @@ Ejemplo de producto:
 Esta API RESTful sigue una arquitectura MVC (Modelo-Vista-Controlador) tal como lo pedia la docente en distintos encuentros sincronicos, donde se separan responsabilidades para facilitar el mantenimiento del código.
 ###  Estructura del proyecto:
 ![GET productos](./assets/estructura.png)
+En este proyecto creamos varias carpetas para organizar los archivos, las pruebas y tambien la documentacion para su correcto funcionamiento.
 
 --
 
@@ -40,27 +41,27 @@ Esta API RESTful sigue una arquitectura MVC (Modelo-Vista-Controlador) tal como 
 
 ### pasos a seguir
  - Acceder a la carpeta:
-```bash
+bash
 cd mini-proyecto-de-integracion
-```
 
  - Instalar dependencias:
-```bash
+   
 npm install
-```
+
 
  - Ejecutar el proyecto:
-```bash
+   
 npm run dev
-```
 
 - iniciar manualmente:
-```bash
+  
 npm start
-```
+
 
 Servidor disponible en:  
 [http://localhost:3000](http://localhost:3000)
+
+
 
 ---
 
