@@ -70,8 +70,21 @@ Servidor disponible en:
 ## Autenticación Básica
 
 Lo que usamos para nuesta API RESTful fue proteger por autenticación **Basic Auth** para que la persona que quiera ver el contenido tenga que introducir una contraseña en especifico, a continuacion se mostraran las dos imagenes que se deberian ver al abrir nuestro endpoint.  
-IMAGEN CORRECTA
-IMAGEN INCORRECTA
+
+**Autenticacion correcta**
+
+![GET productos](./assets/middleware.png)
+esta es la autenticacion que pedira el programa cuando se entre al endpoint para poder ver la lista de productos de aseo
+![GET productos](./assets/middleware-bien.png)
+aqui introducimos los datos correctamente para ver que pasaba y ver si el funcionamiento esta bien
+![GET productos](./assets/endpoint.png)
+si es correcto seberia aparecer nuestro endpoint, el cual mostramos anteriormente
+
+**Autenticacion incorrecta**
+![GET productos](./assets/credencial-mal.png)
+en este caso pusimos datos incorrectos para saber que pasaba si le damos enter a esto
+![GET productos](./assets/credencial-mal2.png)
+aqui vemos el mensaje que nos deja el programa al introducir los datos mal, por ello no mostrara la lista de productos propuesta
 
 ## Pruebas con Postman
 
