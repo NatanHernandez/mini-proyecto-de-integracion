@@ -165,6 +165,8 @@ Archivo .github/workflows/ci.yml
 ![GET productos](./assets/workflows.png)
 - Aparte de esto se usa pipeline en la opcion actions de gihub en donde vemos un cuadro que nos dice que las pruebas realaizadas son correctas
 
+![GET productos](./assets/workflows.png) 
+falta
 ## Pruebas Automatizadas realizadas con Jest 
 
 Archivo: test/productos.test.js
@@ -178,38 +180,21 @@ Archivo: test/productos.test.js
 -aqui vemos que las pruebas corren perfectamente en el programa
 ---
 
-## 🧩 Buenas Prácticas Aplicadas
+## conclusiones
+- Este proyecto nos enseño a aplicar los fundamentos del desarrollo de servicios API RESTful que se usan normalmente en el back-end utilizando Node.js y Express.
+- implementamos correctamente los métodos GET, POST, PUT y DELETE para la gestión de productos de aseo desde el postman y nuestro endpoint.
+- se aplicaron middlewares personalizados para la autenticación básica y la validación de datos
+- realice pruebas ci y pipeline para el entendimiento de estA
+- se implementa el endpoint para la lista de productos
 
-- Estructura modular (MVC)
-- Middlewares para autenticación y validación
-- Control de errores HTTP
-- Pruebas automatizadas (Jest + Supertest)
-- Flujo de CI/CD funcional (GitHub Actions)
-- Uso de Postman para pruebas manuales
-- Uso de `.gitignore` y manejo de dependencias limpio
-- Código limpio, comentado y documentado
 
----
-
-## 📈 Estado del Proyecto
-
-| Área | Estado |
-|------|--------|
-| **CRUD completo** | ✅ |
-| **Autenticación básica** | ✅ |
-| **Validación de datos** | ✅ |
-| **Pruebas Postman** | ✅ |
-| **Pruebas Jest** | ✅ |
-| **Integración continua (CI)** | ✅ |
-| **README documentado** | ✅ |
-
-📊 **Porcentaje de cumplimiento estimado:**  
-**100% — Proyecto completo y funcional**
 
 ---
 
 ## 🧭 Flujo del Proyecto (Diagrama)
 
+- como ultimo punto adjunto la imagen de un diagrama de flujo del proceso de construccion de esta API RESTful
+  
 ```mermaid
 flowchart TD
 A[Cliente/Postman] -->|Solicitud con Basic Auth| B[Servidor Express]
@@ -222,15 +207,3 @@ F --> G[Respuesta JSON]
 
 ---
 
-## 👨‍💻 Autor
-
-**Natan Hernández**  
-Proyecto académico — *Desarrollo de Servicios Web / Ingeniería de Software*  
-📅 Año: **2025**
-
----
-
-## 🏁 Licencia
-
-Este proyecto se distribuye bajo la licencia **ISC**.
-Puedes modificar y utilizar el código con fines académicos o de aprendizaje.
