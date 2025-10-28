@@ -152,7 +152,7 @@ Valida que los datos del producto sean correctos antes de crear o actualizar alg
 
 Definido en productosModel.js, simula una base de datos en memoria:
 
-imagen
+![GET productos](./assets/lista.png)
 
 ---
 
@@ -162,59 +162,20 @@ El proyecto usa **GitHub Actions** para ejecutar pruebas automáticamente con Je
 
 Archivo .github/workflows/ci.yml:
 
-name: CI - Integración continua del proyecto
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Clonar el repositorio
-        uses: actions/checkout@v4
-
-      - name: Configurar Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "18"
-
-      - name: Instalar dependencias
-        run: npm install
-
-      - name: Ejecutar pruebas con Jest
-        run: npm test
-```
-
----
+![GET productos](./assets/workflows.png)
+- Aparte de esto se usa pipeline en la opcion actions de gihub en donde vemos un cuadro que nos dice que las pruebas realaizadas son correctas
 
 ## Pruebas Automatizadas realizadas con Jest 
 
 Archivo: test/productos.test.js
 
-```js
-const request = require('supertest');
-const app = require('../app');
+![GET productos](./assets/pruebas-ci.png)
 
-describe('Pruebas del endpoint de productos', () => {
-  it('Debe responder con código 200 en /api/productos', async () => {
-    const res = await request(app)
-      .get('/api/productos')
-      .auth('natan', '1202');
-    expect(res.statusCode).toBe(200);
-  });
-});
-```
+- este es el detalle de lo que se realiza para que las pruebas se ejecuten en vs
+   
+![GET productos](./assets/pruebas-test.png)
 
-Ejecutar pruebas:
-```bash
-npm test
-```
-
+-aqui vemos que las pruebas corren perfectamente en el programa
 ---
 
 ## 🧩 Buenas Prácticas Aplicadas
