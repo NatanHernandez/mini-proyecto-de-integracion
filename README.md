@@ -61,6 +61,8 @@ npm start
 Servidor disponible en:  
 [http://localhost:3000](http://localhost:3000)
 
+![GET productos](./assets/terminal.png)
+
 
 
 ---
