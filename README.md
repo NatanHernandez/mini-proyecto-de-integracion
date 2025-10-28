@@ -99,11 +99,20 @@ Lo que usamos para nuesta API RESTful fue proteger por autenticación **Basic Au
 ## Pruebas con Postman
 
 Se realizaron pruebas en **Postman** para verificar los endpoints:
- 
-IMAGEN GET
-IMAGEN POST
-IMAGEN PUT
-IMAGEN DELETE
+
+## Get
+![GET productos](./assets/credencial-mal2.png)
+## Post
+![GET productos](./assets/credencial-mal2.png)
+![GET productos](./assets/credencial-mal2.png)
+## Put
+![GET productos](./assets/credencial-mal2.png)
+![GET productos](./assets/credencial-mal2.png)
+## Delete
+![GET productos](./assets/credencial-mal2.png)
+![GET productos](./assets/credencial-mal2.png)
+
+
 
 Todas las rutas fueron probadas con autenticación básica y devuelven los códigos esperados (`200`, `201`, `404`).
 
