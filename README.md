@@ -152,12 +152,7 @@ Valida que los datos del producto sean correctos antes de crear o actualizar alg
 
 Definido en productosModel.js, simula una base de datos en memoria:
 
-```js
-let productos = [
-  { id: 1, nombre: "Jabón", precio: 3700, stock: 10 },
-  { id: 2, nombre: "Shampoo", precio: 8000, stock: 5 }
-];
-```
+imagen
 
 ---
 
