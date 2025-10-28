@@ -160,7 +160,7 @@ Definido en productosModel.js, simula una base de datos en memoria:
 
 El proyecto usa **GitHub Actions** para ejecutar pruebas automáticamente con Jest cada vez que se hace un push o pull request en la rama main.
 
-Archivo .github/workflows/ci.yml:
+Archivo .github/workflows/ci.yml
 
 ![GET productos](./assets/workflows.png)
 - Aparte de esto se usa pipeline en la opcion actions de gihub en donde vemos un cuadro que nos dice que las pruebas realaizadas son correctas
