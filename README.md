@@ -103,7 +103,7 @@ Se realizaron pruebas en **Postman** para verificar los endpoints:
 ## Get
 ![GET productos](./assets/get-postman.png)
 
--como podemos ver este es el mismo que nuestro endpoint principal
+- como podemos ver este es el mismo que nuestro endpoint principal
 ## Post
 ![GET productos](./assets/post-postman.png)
 
@@ -111,24 +111,24 @@ Se realizaron pruebas en **Postman** para verificar los endpoints:
 
 ![GET productos](./assets/post-endpoint.png)
 
--esta es la ejecucion de el post en el endpoint cuando se actualizan los datos en el postman
+- esta es la ejecucion de el post en el endpoint cuando se actualizan los datos en el postman
 
 ## Put
 ![GET productos](./assets/put-postman.png)
 
--aca vemos como se actualizan o se modifican datos de los productos que queramos
+- aca vemos como se actualizan o se modifican datos de los productos que queramos
 
 ![GET productos](./assets/put-endpoint.png)
 
--aca se actualiza igualmente en el endpoint
+- aca se actualiza igualmente en el endpoint
 ## Delete
 ![GET productos](./assets/delete-postman.png)
 
--aca se elimina un producto para despues verlo en el endpoint
+- aca se elimina un producto para despues verlo en el endpoint
 
 ![GET productos](./assets/delete-endpoint.png)
 
--se elimino el producto desde el postman
+- se elimino el producto desde el postman
 
 ---
 
