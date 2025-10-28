@@ -132,25 +132,25 @@ Se realizaron pruebas en **Postman** para verificar los endpoints:
 
 ---
 
-Todas las rutas fueron probadas con autenticación básica y devuelven los códigos esperados (`200`, `201`, `404`).
+Todas las rutas fueron probadas con autenticación básica y devuelven los códigos que se esperaban.
 
 ---
 
 ##  Middleware Personalizados
 
-###  `autenBasica.js`
+###  autenBasica.js
 Verificamos las credenciales del usuario para acceder a los endpoints.
 
-###  `validarProducto.js`
+###  validarProducto.js
 Valida que los datos del producto sean correctos antes de crear o actualizar alguna otra informacion:
 - Nombre no vacío
-- Precio numérico y mayor que 0
+- Precio numérico y que los datos numericos sean mayor que 0
 
 ---
 
 ## Modelo de Datos
 
-Definido en `productosModel.js`, simula una base de datos en memoria:
+Definido en productosModel.js, simula una base de datos en memoria:
 
 ```js
 let productos = [
@@ -163,10 +163,10 @@ let productos = [
 
 ## 🧰 Integración Continua (CI)
 
-El proyecto usa **GitHub Actions** para ejecutar pruebas automáticamente con Jest cada vez que se hace un push o pull request en la rama `main`.
+El proyecto usa **GitHub Actions** para ejecutar pruebas automáticamente con Jest cada vez que se hace un push o pull request en la rama main.
 
-Archivo `.github/workflows/ci.yml`:
-```yaml
+Archivo .github/workflows/ci.yml:
+
 name: CI - Integración continua del proyecto
 
 on:
@@ -197,9 +197,9 @@ jobs:
 
 ---
 
-## 🧪 Pruebas Automatizadas con Jest y Supertest
+## Pruebas Automatizadas realizadas con Jest 
 
-Archivo: `test/productos.test.js`
+Archivo: test/productos.test.js
 
 ```js
 const request = require('supertest');
