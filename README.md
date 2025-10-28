@@ -194,6 +194,7 @@ Archivo: test/productos.test.js
 ##  Flujo del Proyecto (Diagrama)
 
 - como ultimo punto adjunto la imagen de un diagrama de flujo del proceso de construccion de esta API RESTful
-  
+
+![GET productos](./assets/diagrama.png)
 
 
