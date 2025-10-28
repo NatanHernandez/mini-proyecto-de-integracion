@@ -197,4 +197,5 @@ Archivo: test/productos.test.js
 
 ![GET productos](./assets/diagrama.png)
 
+este diagrama explica a nivel general un poco el fundcionamiento de una API RESTful realizado mediante un programa llamado draw.io
 
